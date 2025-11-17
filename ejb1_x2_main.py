@@ -74,8 +74,10 @@ el producto que aparece con mayor frecuencia en las facturas. El valor devolver 
 valor es tipo “Product” y el segundo es la cantidad de apariciones del producto. Por ejemplo:
 (<bills.item.Product object at 0x000002D8F6DE2DD0>, 6)
 
-find_top_two_sellers(): Es una función para buscar a los 2 primeros vendedores con el mayor importe total de 
-ventas. Esta devuelve de una lista de entidades pertenecientes a la clase "Seller". Por ejemplo:
+find_top_two_sellers(): Es una función que permite obtener hasta los 2 vendedores con el mayor importe total 
+de ventas, pertenecientes a la clase "Seller". La función debe devolver una lista ordenada de mayor a menor 
+importe, con un máximo de 2 elementos. Si solo existe un vendedor con ventas registradas, la lista contendrá 
+únicamente ese vendedor. Por ejemplo:
 [<bills.entity.Seller object at 0x000002D8F6983BD0>, <bills.entity.Seller object at 0x000002D8F6DE2F50>]
 
 find_buyer_lowest_total_purchases(): Se trata de una función que permite buscar al comprador con el menor 
